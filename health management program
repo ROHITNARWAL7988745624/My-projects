@@ -1,0 +1,82 @@
+import datetime
+def gettime():
+    return datetime.datetime.now()
+
+def give_data():
+    print("Type 1 for "+user1_name+" and 2 for "+user2_name)
+    user_input=int(input())
+    if user_input==1:
+        print("Type 1 for food and 2 for exercise")
+        user_input_1=int(input())
+        if user_input_1==1:
+            print("Enter Food you want to add")
+            food_input=input()
+            with open(user1_name+" Food.txt","x") as w:
+                w.write(food_input)
+                print("Written Sucessfully" +" Time at which added :", gettime())
+        if user_input_1==2:
+            print("Enter exercise you want to add")
+            exercise_input=input()
+            with open(user1_name+ "exercise.txt","x") as w:
+                w.write(exercise_input)
+                print("Written Sucessfully" +" Time at which added :", gettime())
+    if user_input==2:
+        print("Type 1 for food and 2 for exercise")
+        user_input_2=int(input())
+        if user_input_2==1:
+            print("Enter Food you want to add")
+            food_input=input()
+            with open(user2_name+" Food.txt","x") as w:
+                w.write(food_input)
+                print("Written Sucessfully" +" Time at which added :", gettime())
+        if user_input_2==2:
+            print("Enter exercise you want to add")
+            exercise_input=input()
+            with open(user2_name+" exercise.txt","x") as w:
+                w.write(exercise_input)
+                print("Written Sucessfully" +" Time at which added :", gettime())
+    return give_data()
+def retrieve_data():
+    print("Type 1 for "+user1_name+" and 2 for "+user2_name)
+    user_input=int(input())
+    if user_input==1:
+        print("Type 1 for food and 2 for exercise")
+        user_input_1=int(input())
+        if user_input_1==1:
+            with open(user1_name+" food.txt","r") as r:
+                read_file=r.readlines()
+                print("Readed Sucessfully" +" Time at which readed :", gettime())
+                print(read_file)
+        if user_input_1==2:
+            with open(user1_name+" exercise.txt","r") as r:
+                read_file=r.readlines()
+                print("Readed Sucessfully" +" Time at which readed :", gettime())
+                print(read_file)
+    if user_input==2:
+        print("Type 1 for food and 2 for exercise")
+        user_input_2=int(input())
+        if user_input_2==1:
+            with open(user2_name+" food.txt","r") as r:
+                read_file=r.readlines()
+                print("Readed Sucessfully" +" Time at which readed :", gettime())
+                print(read_file)
+        if user_input_2==2:
+            with open(user2_name+" exercise.txt","r") as r:
+                read_file=r.readlines()
+                print("Readed Sucessfully" +" Time at which readed :", gettime())
+                print(read_file)
+    return retrieve_data()
+print("Welcome to our program")
+print("Kindly Please follow instructions")
+print("Enter user 1 name")
+user1_name=input()
+print("Enter user 2 name")
+user2_name=input()
+print("Type 1 to add data and Type 2 for retrieving data")
+user_data=int(input())
+if user_data==1:
+    give_data()
+if user_data==2:
+    retrieve_data()
+else:
+    print("Kindly follow instructions")
