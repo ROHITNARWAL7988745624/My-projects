@@ -1,0 +1,29 @@
+import random
+list=("Rock","Paper","Scissor")
+print("Welcome to our game enter a value from Rock,Paper and Scissor")
+print("Your input is: ")
+user_input=input()
+computer_input=random.choice(list)
+def loose_game():
+    print("You loose game,Try again")
+def win_game():
+    print("You win game,Congratulations")
+
+print("Computer choice is: ",computer_input)
+
+if user_input=="Rock" and computer_input=="Paper":
+    loose_game()
+elif user_input=="Scissor" and computer_input=="Rock":
+    loose_game()
+elif user_input=="Paper" and computer_input=="Scissor":
+    loose_game()
+elif user_input=="Rock" and computer_input=="Scissor":
+    win_game()
+elif user_input=="Paper" and computer_input=="Rock":
+    win_game()
+elif user_input=="Scissor" and computer_input=="Paper":
+    win_game()
+elif user_input==computer_input:
+    print("Draw")
+else:
+    print("Try only given values")
