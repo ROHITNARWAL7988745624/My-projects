@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+.upperpart{
+    display: flex;
+    padding: 30px;
+    justify-content:space-between ;
+}
+.left-side{
+    display: flex;
+}
+.upperpart > .left-side > div {
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+.name{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:black;
+}
+.links-for-pages {
+    height: 30px;
+    border-bottom: 1px solid transparent;
+    transition:border-bottom 0.5s ;
+}
+.links-for-pages a {
+    color:black;
+    text-decoration: none;
+}
+.links-for-pages:hover {
+    border-bottom: 2px solid ;
+}
+.image-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+.image{
+    border: 5px solid black;
+}
+.para1{
+    margin-left: 20px;
+    font-size: 30px;
+    font-family:cursive;
+}
+.upperpart{
+    background-image:url("image/welcome-image.png");
+}

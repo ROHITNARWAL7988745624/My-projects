@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    
+}
+.cutoff-other{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.upperpart{
+    display: flex;
+    padding: 30px;
+    justify-content:space-between ;
+    font-family:cursive;
+}
+.first-message-p{
+    display:flex;
+    
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.left-side{
+    display: flex;
+}
+.upperpart > .left-side > div {
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+.name{
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:black;
+}
+.links-for-pages {
+    height: 30px;
+    border-bottom: 2px solid transparent;
+    transition:border-bottom 0.5s ;
+}
+.links-for-pages a {
+    color:black;
+    text-decoration: none;
+}
+.links-for-pages:hover {
+    border-bottom: 1px solid ;
+
+}
+.first-data{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+    
+}
+.para2{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.list1{
+    margin-left: 50px;
+    text-align: left;
+}
+.para3{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.image-2{
+    margin-left: 200px;
+}
+.para4{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.youtube-link{
+    font-size: 40px;
+    font-weight: bold;
+}
+.timetable{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.last-thing{
+    font-size: 25px;
+    margin-left: 50px;
+    color:black;
+    font-family:cursive;
+}
+.upper-section{
+    background-image:url("image/welcome-image.png");
+}
+.first-message{
+    display: flex;
+
+}
+.image{
+    text-align: right;
+}
+.heading-image{
+    display: flex;
+    justify-content: space-between;
+}    
+.image-with-info{
+    padding-top: 40px;
+    padding-right: 750px;
+    height: 20px;
+}
+.cutoff{
+    display: flex;
+    justify-content: space-between;
+}
+.cutoff-image{
+    padding-right: 930px;
+    padding-top: 30px;
+}
+.image-2{
+    padding-top: 40px;
+}
+.books-image{
+    display: flex;
+    justify-content: space-between;
+}
+.book-image{
+    margin-right: 800px;
+}
+.time-table-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.image-timetable{
+    margin-right: 600px;
+    margin-top: 15px;
+}
+.table-data{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px;
+}
+.physics{
+    padding: 30px;
+}
+.math-table{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 60px;
+}
+.heading-math{
+    padding: 30px;
+
+}
+.heading-chemistry{
+    margin-left: 30px;
+}
+.chemistry-table{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px;
+    margin-left: 30px;
+}
+
